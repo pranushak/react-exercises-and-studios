@@ -1,5 +1,16 @@
+import recipe from './recipe.json'
+
 function IngredientList() {
-   return;
+  let ingredients = [];
+  recipe.map((props) =>{
+   const list = props.ingredients.map((ingredient, i) => {
+    return <li key={i}>{ingredient}</li>
+   });
+   ingredients.push(list)
+  })
+   return <div>
+    <h3>{ingredients}</h3>
+   </div>;
  }
  
  export default IngredientList;
