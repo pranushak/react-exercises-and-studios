@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.vahrehvah.com/hyderabadi-chicken-biryani-recipe";
+   let authorPhoto = "https://upload.wikimedia.org/wikipedia/commons/8/89/Sanjay_Thumma%2C_The_Vah_Chef.jpg";
+   let authorName = "Sanjay Thumma";
 
    return (
       <div>
@@ -17,7 +17,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["Chicken", "Rice", "Fried Onions", "Biryani Masala", "ginger & garlic"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -36,8 +36,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Chicken Dum Biryani</h1>
+            <p>This is the most popular dish in Hyderabad,India.</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,7 +49,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://vismaifood.com/storage/app/uploads/public/e12/7b7/127/thumb__700_0_0_0_auto.jpg" alt="Chicken Dum biryani" className="imageUpdates"/>
    );
 }
 
